@@ -8,6 +8,12 @@ export default [
     },
   },
   {
+    input: "MyButton.tsx",
+    output: {
+      file: "dist/my-button.js",
+    },
+  },
+  {
     input: "Header.tsx",
     output: {
       file: "dist/header.js",
