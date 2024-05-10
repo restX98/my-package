@@ -7,6 +7,10 @@
       "types": "./Button.tsx",
       "default": "./dist/button.js"
     },
+    "./my-button": {
+      "types": "./MyButton.tsx",
+      "default": "./dist/my-button.js"
+    },
     "./header": {
       "types": "./Header.tsx",
       "default": "./dist/header.js"
