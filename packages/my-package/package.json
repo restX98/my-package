@@ -1,7 +1,21 @@
 {
-  "name": "@repo/ui",
-  "version": "0.0.0",
+  "name": "@restx98/my-package",
+  "version": "1.0.0",
+  "description": "My First Package",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/restX98/my-package.git"
+  },
+  "author": "restX98",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/restX98/my-package/issues"
+  },
+  "homepage": "https://github.com/restX98/my-package#readme",
   "type": "module",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "exports": {
     "./button": {
       "types": "./Button.tsx",

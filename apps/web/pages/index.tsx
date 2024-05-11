@@ -1,6 +1,6 @@
-import { Button } from "@repo/ui/button";
-import { MyButton } from "@repo/ui/my-button";
-import { Header } from "@repo/ui/header";
+import { Button } from "@restx98/my-package/button";
+import { MyButton } from "@restx98/my-package/my-button";
+import { Header } from "@restx98/my-package/header";
 
 export default function Page() {
   return (
