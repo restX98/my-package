@@ -25,11 +25,20 @@ jobs:
       - name: Use Node.js 21
         uses: actions/setup-node@v4
         with:
+          registry-url: "https://npm.pkg.github.com"
           node-version: 21
           cache: "pnpm"
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+
+      - name: Creating .npmrc
+        run: |
+          cat << EOF > "$HOME/.npmrc"
+            //npm.pkg.github.com/:_authToken=$NPM_TOKEN
+          EOF
+        env:
+          NPM_TOKEN: ${{ secrets.GH_TOKEN }}
 
       - name: Create Release Pull Request or Publish to npm
         uses: changesets/action@v1
