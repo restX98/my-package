@@ -1,0 +1,41 @@
+{
+  "name": "@restx98/my-package",
+  "version": "0.0.0",
+  "type": "module",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/restX98/my-package.git",
+    "directory": "packages/my-package"
+  },
+  "exports": {
+    "./button": {
+      "types": "./Button.tsx",
+      "default": "./dist/button.js"
+    },
+    "./my-button": {
+      "types": "./MyButton.tsx",
+      "default": "./dist/my-button.js"
+    },
+    "./header": {
+      "types": "./Header.tsx",
+      "default": "./dist/header.js"
+    }
+  },
+  "scripts": {
+    "lint": "eslint *.ts*",
+    "build": "rollup --config",
+    "dev": "pnpm build --watch"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/react": "^18.2.61",
+    "@types/react-dom": "^18.2.19",
+    "eslint": "^8.57.0",
+    "react": "^18.2.0",
+    "rollup": "^4.12.0",
+    "typescript": "^5.3.3"
+  }
+}
