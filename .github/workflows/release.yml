@@ -3,7 +3,7 @@ name: Release Node.js Package
 on:
   push:
     branches:
-      - main
+      - master
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
