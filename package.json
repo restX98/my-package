@@ -1,8 +1,11 @@
 {
   "name": "my-package",
   "version": "1.0.0",
-  "description": "",
+  "description": "My First Package",
   "main": "index.js",
+  "publishConfig": {
+    "@restX98:registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "test": "echo \"No test specified\" && exit 0"
   },
