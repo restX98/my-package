@@ -7,8 +7,8 @@
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "changeset": "changeset",
-    "version-packages": "changeset version && pnpm install --lockfile-only",
-    "release": "turbo run build lint && changeset publish"
+    "ci:version": "changeset version && pnpm install --lockfile-only",
+    "ci:publish": "turbo run build lint && pnpm publish -r --access public"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
