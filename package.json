@@ -6,6 +6,7 @@
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "format:check": "turbo format:check",
     "changeset": "changeset",
     "ci:version": "changeset version && pnpm install --lockfile-only",
     "ci:publish": "turbo run build lint && changeset publish"
