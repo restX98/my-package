@@ -14,6 +14,12 @@ export default [
     },
   },
   {
+    input: "MyLabel.tsx",
+    output: {
+      file: "dist/my-label.js",
+    },
+  },
+  {
     input: "Header.tsx",
     output: {
       file: "dist/header.js",
