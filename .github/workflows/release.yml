@@ -47,3 +47,4 @@ jobs:
           version: pnpm ci:version
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.GH_TOKEN }}
