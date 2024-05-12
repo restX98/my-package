@@ -4,7 +4,11 @@
   "description": "My First Package",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/restX98/my-package.git"
+    "url": "git+https://github.com/restX98/my-package.git",
+    "directory": "packages/my-package"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "author": "restX98",
   "license": "ISC",
@@ -13,9 +17,6 @@
   },
   "homepage": "https://github.com/restX98/my-package#readme",
   "type": "module",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "exports": {
     "./button": {
       "types": "./Button.tsx",
