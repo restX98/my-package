@@ -26,6 +26,10 @@
       "types": "./MyButton.tsx",
       "default": "./dist/my-button.js"
     },
+    "./my-label": {
+      "types": "./MyLabel.tsx",
+      "default": "./dist/my-label.js"
+    },
     "./header": {
       "types": "./Header.tsx",
       "default": "./dist/header.js"
