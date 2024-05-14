@@ -1,6 +1,6 @@
 export const MyLabel = ({ text }: { text: string }) => {
   let wrongAssignation;
-  let newWrongAssignation;
+   let newWrongAssignation;
 
   return <span>{text}</span>;
 };
