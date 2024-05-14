@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   linting:
-    name: 🕵 Linting
+    name: 🕵 Lint
     runs-on: ubuntu-latest
     steps:
       - name: Checkout branch
@@ -20,11 +20,11 @@ jobs:
       - name: Setup
         uses: ./.github/actions/ci-setup
 
-      - name: ESLint
+      - name: Linting
         run: pnpm lint
 
   format:
-    name: 💅 Formatting
+    name: 💅 Format
     runs-on: ubuntu-latest
     steps:
       - name: Checkout branch
@@ -33,11 +33,11 @@ jobs:
       - name: Setup
         uses: ./.github/actions/ci-setup
 
-      - name: Prettier
+      - name: Formatting
         run: pnpm format:check
 
   build:
-    name: 💣 Building
+    name: 💣 Build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout branch
@@ -46,5 +46,5 @@ jobs:
       - name: Setup
         uses: ./.github/actions/ci-setup
 
-      - name: Build
+      - name: Building
         run: pnpm build
